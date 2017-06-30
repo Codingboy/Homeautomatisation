@@ -1,0 +1,57 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+
+\lstset{basicstyle=\ttfamily,columns=fullflexible}
+\lstset{literate=%
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+	{ß}{{\ss}}1
+	{ü}{{\"u}}1
+	{ä}{{\"a}}1
+	{ö}{{\"o}}1
+}
+\newcommand*{\thead}[1]{\multicolumn{1}{c}{\bfseries #1}}
+
+\begin{document}
+
+\title{Heizungssteuerung}
+\author{Viktor Saibel \& Daniel Tkocz}
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Einleitung}
+%TODO bla
+\section{Umsetzung}
+%TODO bla
+\begin{figure}[h!]
+\centering
+\includegraphics[width=8cm]{length}
+\caption{TODO}
+\label{fig:length}
+\end{figure}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|}
+\thead{Klassifizierverfahren} & \thead{Gewichtung}\\\hline
+Token & 1,0\\\hline
+Grammatik & 0,1\\\hline
+Länge & 0,45\\\hline
+\end{tabular}
+\caption{Gewichtung}
+\label{tab:weights}
+\end{table}
+\section{Fazit}
+%TODO bla
+
+\end{document}
